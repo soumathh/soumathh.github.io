@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Soumath</title>
+  <meta name="description" content="">
+  <meta name="Kelvin Bolivar" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="css/logo.jpg">
+  <style type="text/css">
+    .menu{
+      width:100%;
+      padding:0;
+      position:fixed;
+      z-index:1000;
+      background:white;
+    }
+    .menu img{
+      max-width:50px;
+      margin-top:7px;
+      margin-left:10px;
+    }
+    .menu h4{
+      margin-top:16px;
+      color: red;
+    }
+    .l1{
+      color:dodgerblue;
+    }
+    .controles h4{
+      color: dodgerblue;
+    }
+    .controles, #n1, #n2{
+      text-align:center;
+    }
+    button.button-primary.uno{
+      background: dodgerblue;
+      border-color: dodgerblue;
+    }
+    button.button-primary.dos{
+      background:red;
+      border-color: red;
+    }
+    button{
+      padding-right:5px;
+      padding-left:5px;
+    }
+    #result{
+      display: flex;
+      justify-content:center;
+    }
+    pre{
+      margin-top: 0;
+      display:0;
+      display: block;
+      font-size: 20px;
+    }
+    .footer{
+      text-align:center;
+      color:gray;
+    }
+    .footer u{
+      color:dodgerblue;
+    }
+    .imagen{
+      margin-left:10px;
+      margin-right:10px;
+    }
+    .social img{
+      padding:5px;
+    }
+    .social img:hover{
+      background:dodgerblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container menu">
+    <img src="https://img3.teletype.in/files/65/98/659826a1-c6ea-46bb-946e-72c9ba560bd2.jpeg" class="u-pull-left">
+    <h4 class="u-pull-left"><b><span class="l1">Sou</span>math</b></h4>
+  </div>
+  
+  <br><br><br><br>
+  <div class="container">
+    <div class="controles">
+      <h4><b>Calculadora por pasos</b></h4>
+      <input id="n1" size="7" placeholder="Numero 1" type="text">
+      <select id="operacion">
+        <option value="m">x</option>
+        <option value="d">/</option>
+        <option value="s">+</option>
+        <option value="r">-</option>
+      </select>
+      <input id="n2" size="7" placeholder="Numero 2" type="text">
+      <br>
+      <button class="button-primary dos" onclick="limpiar()">Limpiar</button>
+      <button class="button-primary uno" onclick="control()">Calcular</button>
+    </div>
+  </div>
+  <br><br>
+  <div class="container resultados">
+    <div id="result"></div>
+  </div>
+  
+  <div class="container footer">
+    <p>By <u>Soumath</u> for students</p>
+    <div class="social">
+      <a href="https://linkfork.io/kelvin"><img src="https://icongr.am/clarity/grid-view.svg?size=16&color=currentColor"></a>
+      <a href="https://linkfork.io/soumath"><img class="imagen" src="https://icongr.am/clarity/lightbulb.svg?size=16&color=currentColor"></a>
+      <a href="https://boxsay.t.me"><img src="https://icongr.am/feather/send.svg?size=16&color=6e6e6e"></a>
+    </div>
+  </div>
+<script src="css/app.js"></script>
+</body>
+</html>
